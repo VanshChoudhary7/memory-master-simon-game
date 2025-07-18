@@ -1,7 +1,7 @@
 body{
     text-align: center;
     color: #623412;
-    background-color: black;
+    background-color: #CDC4AA;
     margin: 0;
     padding: 25px 500px;
 }
@@ -11,7 +11,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 7mm ridge #653818;
+    border: 9mm ridge #653818;
     padding: 40px;
     flex-direction: column;
     background-color: #DFD7C8;
