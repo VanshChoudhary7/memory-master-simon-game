@@ -3,6 +3,7 @@ body{
     color: white;
     background-color: black;
     margin: 0;
+    padding: 25px;
 }
 .box {
     margin: 0;
