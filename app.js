@@ -8,10 +8,12 @@ let level = 0;
 let h2 = document.querySelector("h2");
 
 document.addEventListener("keypress", () => {
+    if(started == false) {
     console.log("The Game is Started.");
     started = true;
 
     levelup();
+    }
 })
 
 function btnflash(btn) {
@@ -29,5 +31,5 @@ function levelup() {
     let randclr = btns[randIndx];
     let btn = document.querySelector(`.${randclr}`);
     btnflash(btn);
-    
+
 }

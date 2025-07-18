@@ -39,3 +39,6 @@ body{
 #blue {
     background-color: blue;
 }
+.flash {
+    background-color: rgba(192, 192, 192, 0.6);
+}
