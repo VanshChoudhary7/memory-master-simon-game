@@ -1,9 +1,9 @@
 body{
     text-align: center;
-    color: white;
+    color: #623412;
     background-color: black;
     margin: 0;
-    padding: 25px;
+    padding: 25px 500px;
 }
 .box {
     margin: 0;
@@ -11,9 +11,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 7mm ridge rgb(211 220 50 / 0.6);
+    border: 7mm ridge #653818;
     padding: 40px;
     flex-direction: column;
+    background-color: #DFD7C8;
 }
 .btn-container {
     display: flex;
@@ -22,7 +23,7 @@ body{
 .btn{
     height: 200px;
     width: 200px;
-    border: 10px solid black;
+    border: 3px solid black;
     border-radius: 25px;
     margin: 15px;
 }
