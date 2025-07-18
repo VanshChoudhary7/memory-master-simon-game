@@ -42,3 +42,6 @@ body{
 .flash {
     background-color: white;
 }
+.out {
+    background-color: red;
+}
