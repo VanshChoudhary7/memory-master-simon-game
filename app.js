@@ -52,7 +52,7 @@ function checkAns(idx) {
         setTimeout( ()=> {
             box.classList.remove("out");
             reset();
-        },250)
+        },300)
     }
 }
 
