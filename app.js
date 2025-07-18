@@ -16,20 +16,20 @@ document.addEventListener("keypress", () => {
     }
 })
 
-function btnflash(btn) {
-    btn.classList.add("flash");
+function btnflash(randbtn) {
+    randbtn.classList.add("flash");
     setTimeout( ()=> {
-        btn.classList.remove("flash");
-    },300)
+        randbtn.classList.remove("flash");
+    },350)
 }
 
 function levelup() {
     level++;
     h2.innerText = `Level ${level}`;
 
-    let randIndx = Math.floor(Math.random() * 3);
+    let randIndx = Math.floor(Math.random() * btns.length);
     let randclr = btns[randIndx];
-    let btn = document.querySelector(`.${randclr}`);
-    btnflash(btn);
+    let randbtn = document.querySelector(`.${randclr}`);
+    btnflash(randbtn);
 
 }

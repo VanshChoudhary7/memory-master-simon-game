@@ -27,18 +27,18 @@ body{
     border-radius: 25px;
     margin: 15px;
 }
-#red {
+.red {
     background-color: red;
 }
-#yellow {
+.yellow {
     background-color: yellow;
 }
-#green {
+.green {
     background-color: green;
 }
-#blue {
+.blue {
     background-color: blue;
 }
 .flash {
-    background-color: rgba(192, 192, 192, 0.6);
+    background-color: white;
 }
