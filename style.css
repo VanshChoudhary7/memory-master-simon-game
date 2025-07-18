@@ -1,11 +1,29 @@
 body{
     text-align: center;
+    color: white;
+    background-color: black;
+    margin: 0;
+}
+.box {
+    margin: 0;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 7mm ridge rgb(211 220 50 / 0.6);
+    padding: 40px;
+    flex-direction: column;
+}
+.btn-container {
+    display: flex;
+    justify-content: center; 
 }
 .btn{
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
     border: 10px solid black;
     border-radius: 25px;
+    margin: 15px;
 }
 #red {
     background-color: red;
