@@ -40,7 +40,10 @@ In this game, the computer generates a random sequence of button flashes, and yo
 
 ---
 
+<<<<<<< HEAD
 ## Check it Out
 
+=======
+>>>>>>> feature
 You can view the full project and source code here:  
 👉 [GitHub Repo - memory-master-simon-game](https://github.com/VanshChoudhary7/memory-master-simon-game)
