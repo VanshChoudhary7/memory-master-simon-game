@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="96x96" href="./public/favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simon Say Game</title>
@@ -10,6 +13,9 @@
     <div class="box">
     <h1>Simon Say Game</h1>
     <h2>Press Any Key to Start the Game</h2>
+    <div id="toast"></div>
+    <button id="muteBtn">🔊</button>
+    <p id="score">High Score: 0</p>
     <div class="btn-container">
         <div class="btnfirst">
             <div class="btn red" id="red"></div>
@@ -21,6 +27,8 @@
         </div>
     </div>
     </div>
+    <div class="badge">Made with 💛 by Vansh Choudhary</div>
+    <a href="https://github.com/VanshChoudhary7/memory-master-simon-game" target="_blank" rel="noopener" class="badge badge-github">💻 View on GitHub</a>
     <script src="app.js"></script>
 </body>
 </html>

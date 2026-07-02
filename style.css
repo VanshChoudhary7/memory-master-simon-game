@@ -1,31 +1,75 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
     text-align: center;
     color: #623412;
-    background-color: #CDC4AA;
+    background: linear-gradient(135deg, #4A3B2A, #241A12);
     margin: 0;
-    padding: 24px 500px;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 .box {
     margin: 0;
     height: fit-content;
+    max-height: 92vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 9mm ridge #653818;
-    padding: 40px;
+    border: 5mm ridge #653818;
+    padding: 20px;
     flex-direction: column;
-    background-color: #DFD7C8;
+    background-color: #6B5B47;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    box-sizing: border-box;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+@keyframes glow {
+    from {
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+    }
+
+    to {
+        box-shadow: 0 20px 60px rgba(255, 210, 90, 0.25);
+    }
 }
 .btn-container {
     display: flex;
     justify-content: center; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.1s ease;
 }
-.btn{
-    height: 200px;
-    width: 200px;
+.btn:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+.btn:active {
+    transform: scale(0.94);
+}
+.btn {
+    height: clamp(90px, 16vh, 180px);
+    width: clamp(90px, 16vh, 180px);
     border: 3px solid black;
     border-radius: 25px;
-    margin: 15px;
+    margin: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.1s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3), inset 0 -6px 10px rgba(0, 0, 0, 0.15);
 }
 .red {
     background-color: red;
@@ -41,7 +85,52 @@ body{
 }
 .flash {
     background-color: white;
+    box-shadow: 0 0 30px 8px white;
 }
 .out {
     background-color: red;
+}
+.badge {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    background-color: #241A12;
+    color: #F1EDE4;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0.9;
+}
+.badge-github {
+    left: 16px;
+    right: auto;
+    text-decoration: none;
+}
+#muteBtn {
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+#toast {
+    position: fixed;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #241A12;
+    color: #F1EDE4;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+#toast.show {
+    opacity: 1;
 }
